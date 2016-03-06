@@ -1,4 +1,6 @@
-# design-patterns-composite
+# Design Patterns - Composite
+
+## Form Validator
 
 This project is an example of how to use the Composite Design Pattern in a real application.
 

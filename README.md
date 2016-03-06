@@ -18,6 +18,6 @@ Composed by:
 
 ### Advantage
 
-Once the validators are created, their logic ca be easly reused on any other form.
+Once the validators are created, their logic can be easly reused on any other form.
 
 ![Composite - Form Validator](Documents/screen-shots.png)

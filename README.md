@@ -4,6 +4,14 @@
 
 This project is an example of how to use the Composite Design Pattern in a real application.
 
-It creates form validators composed by field validators with different rules, being a flexible and also powerfull approach.
+### EmailFieldValidator
+Composed by DPRequiredFieldValidator and DPEmailFieldValidator
+
+### PhoneFieldValidator
+Composed by DPNumberFieldValidator, DPRequiredFieldValidator, DPMinLengthFieldValidator and DPMaxLengthFieldValidator
+
+### Advantage
+
+Once the validators are created, their logic ca be easly reused on any other form.
 
 ![Composite - Form Validator](Documents/screen-shots.png)

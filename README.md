@@ -5,10 +5,16 @@
 This project is an example of how to use the Composite Design Pattern in a real application.
 
 ### EmailFieldValidator
-Composed by DPRequiredFieldValidator and DPEmailFieldValidator
+Composed by:
+* DPRequiredFieldValidator
+* DPEmailFieldValidator
 
 ### PhoneFieldValidator
-Composed by DPNumberFieldValidator, DPRequiredFieldValidator, DPMinLengthFieldValidator and DPMaxLengthFieldValidator
+Composed by: 
+* DPNumberFieldValidator
+* DPRequiredFieldValidator
+* DPMinLengthFieldValidator
+* DPMaxLengthFieldValidator
 
 ### Advantage
 

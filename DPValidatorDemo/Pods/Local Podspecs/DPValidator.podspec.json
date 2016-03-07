@@ -1,0 +1,32 @@
+{
+  "name": "DPValidator",
+  "version": "1.0.0",
+  "summary": "Assembly Kit Component",
+  "description": "DPValidator is a framework that provides common location features out of the box.",
+  "homepage": "http://ibm.com",
+  "documentation_url": "http://www.ibm.com/mobilefirst",
+  "authors": "IBM",
+  "source": {
+    "git": "git@github.com:vinicius-a-ro/design-patterns-composite.git",
+    "tag": "RELEASE-1.0.0",
+    "submodules": true
+  },
+  "requires_arc": true,
+  "platforms": {
+    "ios": "8.0"
+  },
+  "public_header_files": "Output/DPValidator.framework/Headers/*.h",
+  "source_files": "Output/DPValidator.framework/Headers/*.h",
+  "ios": {
+    "vendored_frameworks": "Output/DPValidator.framework",
+    "frameworks": [
+      "Foundation",
+      "UIKit"
+    ]
+  },
+  "resource_bundles": {
+    "DPValidator": [
+      "Output/DPValidator.framework/DPValidator.bundle"
+    ]
+  }
+}

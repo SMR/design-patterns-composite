@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		8161E7871C8E22C400BA379F /* Universal */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 8161E7881C8E22C400BA379F /* Build configuration list for PBXAggregateTarget "Universal" */;
+			buildPhases = (
+				8161E78B1C8E22C700BA379F /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Universal;
+			productName = Universal;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		81618DDB1C8C5AEA00FDF4D3 /* DPValidator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81618DD01C8C5AEA00FDF4D3 /* DPValidator.framework */; };
 		81618DE01C8C5AEA00FDF4D3 /* DPValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81618DDF1C8C5AEA00FDF4D3 /* DPValidatorTests.swift */; };
@@ -200,6 +214,9 @@
 					81618DD91C8C5AEA00FDF4D3 = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
+					8161E7871C8E22C400BA379F = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
 				};
 			};
 			buildConfigurationList = 81618DCA1C8C5AEA00FDF4D3 /* Build configuration list for PBXProject "DPValidator" */;
@@ -216,6 +233,7 @@
 			targets = (
 				81618DCF1C8C5AEA00FDF4D3 /* DPValidator */,
 				81618DD91C8C5AEA00FDF4D3 /* DPValidatorTests */,
+				8161E7871C8E22C400BA379F /* Universal */,
 			);
 		};
 /* End PBXProject section */
@@ -237,6 +255,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8161E78B1C8E22C700BA379F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "######################\n# Options\n######################\n\nREVEAL_ARCHIVE_IN_FINDER=false\nFRAMEWORK_NAME=\"${PROJECT_NAME}\"\nFRAMEWORK_SCHEME=\"${PROJECT_NAME}\"\nFRAMEWORK_CONFIG=\"Release\"\n#WORKING_DIR=\"${BUILD_DIR}\"\nWORKING_DIR=\"build\"\nSIMULATOR_LIBRARY_PATH=\"${WORKING_DIR}/${FRAMEWORK_CONFIG}-iphonesimulator/${FRAMEWORK_NAME}.framework\"\nDEVICE_LIBRARY_PATH=\"${WORKING_DIR}/${FRAMEWORK_CONFIG}-iphoneos/${FRAMEWORK_NAME}.framework\"\nUNIVERSAL_LIBRARY_DIR=\"${WORKING_DIR}/${FRAMEWORK_CONFIG}-iphoneuniversal\"\nFRAMEWORK=\"${UNIVERSAL_LIBRARY_DIR}/${FRAMEWORK_NAME}.framework\"\n\n######################\n# Build Frameworks\n######################\n\nxcodebuild -target ${FRAMEWORK_SCHEME} -sdk iphonesimulator -configuration ${FRAMEWORK_CONFIG} ONLY_ACTIVE_ARCH=NO ARCHS=\"i386 x86_64\" ENABLE_BITCODE=YES OTHER_CFLAGS=\"-fembed-bitcode\"\nxcodebuild -target ${FRAMEWORK_SCHEME} -sdk iphoneos -configuration ${FRAMEWORK_CONFIG} ONLY_ACTIVE_ARCH=NO ARCHS=\"armv7 armv7s arm64\" ENABLE_BITCODE=YES OTHER_CFLAGS=\"-fembed-bitcode\"\n\n######################\n# Create directory for universal\n######################\n\nrm -rf \"${UNIVERSAL_LIBRARY_DIR}\"\nmkdir -p \"${FRAMEWORK}\"\n\n######################\n# Copy files Framework\n######################\n\ncp -r \"${DEVICE_LIBRARY_PATH}/.\" \"${FRAMEWORK}\"\n\n######################\n# Make an universal binary\n######################\n\nlipo \"${SIMULATOR_LIBRARY_PATH}/${FRAMEWORK_NAME}\" \"${DEVICE_LIBRARY_PATH}/${FRAMEWORK_NAME}\" -create -output \"${FRAMEWORK}/${FRAMEWORK_NAME}\" | echo\n\n# For Swift framework, Swiftmodule needs to be copied in the universal framework\nif [ -d \"${SIMULATOR_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" ]; then\ncp -R \"${SIMULATOR_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" \"${FRAMEWORK}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" | echo\nfi\n\nif [ -d \"${DEVICE_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" ]; then\ncp -R \"${DEVICE_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" \"${FRAMEWORK}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" | echo\nfi\n\n######################\n# On Release, copy the result to release directory\n######################\n\nOUTPUT_DIR=\"${PROJECT_DIR}/../Output/\"\n\nrm -rf \"$OUTPUT_DIR\"\nmkdir -p \"$OUTPUT_DIR\"\ncp -r \"${FRAMEWORK}\" \"$OUTPUT_DIR\"\nrm -rf \"${WORKING_DIR}\"\n\nif [ ${REVEAL_ARCHIVE_IN_FINDER} = true ]; then\nopen \"${OUTPUT_DIR}/\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		81618DCB1C8C5AEA00FDF4D3 /* Sources */ = {
@@ -373,6 +407,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "$(SRCROOT)/Resources/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.ioshouse.DPValidator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -391,6 +426,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "$(SRCROOT)/Resources/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.ioshouse.DPValidator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -414,6 +450,20 @@
 				INFOPLIST_FILE = DPValidatorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.ioshouse.DPValidatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8161E7891C8E22C400BA379F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8161E78A1C8E22C400BA379F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -444,6 +494,15 @@
 			buildConfigurations = (
 				81618DE81C8C5AEA00FDF4D3 /* Debug */,
 				81618DE91C8C5AEA00FDF4D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8161E7881C8E22C400BA379F /* Build configuration list for PBXAggregateTarget "Universal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8161E7891C8E22C400BA379F /* Debug */,
+				8161E78A1C8E22C400BA379F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

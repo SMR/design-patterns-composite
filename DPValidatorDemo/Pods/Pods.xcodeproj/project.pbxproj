@@ -1,0 +1,477 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C9D55871C286FF3535B27B6D34A0E71 /* Pods-DPValidatorDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 00530A9B4EF20D7B5782CB7901C95D33 /* Pods-DPValidatorDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF81BA545EA26F6A23B012BE298354F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		E37344D6697102A9CC0936008679D3A8 /* Pods-DPValidatorDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9319C3C58523B08A837FC91AA18A21 /* Pods-DPValidatorDemo-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C36E7D26D64E87A362166E54603A63B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56C6C10F87E838B62E490A9C4C40E4DB;
+			remoteInfo = "DPValidator-DPValidator";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00530A9B4EF20D7B5782CB7901C95D33 /* Pods-DPValidatorDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DPValidatorDemo-umbrella.h"; sourceTree = "<group>"; };
+		08F19022F0F5F09E61AB4B110CC1F629 /* Pods-DPValidatorDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DPValidatorDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		206C4C4876DEDB9214CFB8FB4A7AFDDA /* Pods_DPValidatorDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DPValidatorDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		207A4730C0E651318B3D789DBCE53C7D /* Pods-DPValidatorDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DPValidatorDemo.modulemap"; sourceTree = "<group>"; };
+		21B15637AC783F81981A2EF8331EB459 /* Pods-DPValidatorDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DPValidatorDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		2B8A450907E5ACC8F5FEB968AB2CA446 /* DPValidator-Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DPValidator-Swift.h"; sourceTree = "<group>"; };
+		2F2C62F7EDB9BBE5D5A737E4A1EBCC0C /* Pods-DPValidatorDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DPValidatorDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		62EE489887EE48E98796DF8CA2D645C9 /* Pods-DPValidatorDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DPValidatorDemo-frameworks.sh"; sourceTree = "<group>"; };
+		698DE700EB5F1747D9F0C5232BC778D0 /* Pods-DPValidatorDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DPValidatorDemo-resources.sh"; sourceTree = "<group>"; };
+		6A9319C3C58523B08A837FC91AA18A21 /* Pods-DPValidatorDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DPValidatorDemo-dummy.m"; sourceTree = "<group>"; };
+		947D5BA52397E2427A9734690E59241B /* DPValidator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DPValidator.framework; path = Output/DPValidator.framework; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D55777B80EF8B3EBDD0F7CEBDA05893A /* DPValidator.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DPValidator.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		E125B7EBC9852A423C118C690DB72654 /* Pods-DPValidatorDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DPValidatorDemo.release.xcconfig"; sourceTree = "<group>"; };
+		E495231C6EC309FD2FF7CECDFE32C1B0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6BC008D788B914BA05F5CF31FFD8E599 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF81BA545EA26F6A23B012BE298354F3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EA2BD267F364139F94980C783B3C81D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		421851BBF81AC3D8497C04DEBBE98C28 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				2B8A450907E5ACC8F5FEB968AB2CA446 /* DPValidator-Swift.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		524B19865B4B5C9603277E11315B2B46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				947D5BA52397E2427A9734690E59241B /* DPValidator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		65593FDE4D68A9963C08B5A0B6E7035F /* Pods-DPValidatorDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E495231C6EC309FD2FF7CECDFE32C1B0 /* Info.plist */,
+				207A4730C0E651318B3D789DBCE53C7D /* Pods-DPValidatorDemo.modulemap */,
+				08F19022F0F5F09E61AB4B110CC1F629 /* Pods-DPValidatorDemo-acknowledgements.markdown */,
+				21B15637AC783F81981A2EF8331EB459 /* Pods-DPValidatorDemo-acknowledgements.plist */,
+				6A9319C3C58523B08A837FC91AA18A21 /* Pods-DPValidatorDemo-dummy.m */,
+				62EE489887EE48E98796DF8CA2D645C9 /* Pods-DPValidatorDemo-frameworks.sh */,
+				698DE700EB5F1747D9F0C5232BC778D0 /* Pods-DPValidatorDemo-resources.sh */,
+				00530A9B4EF20D7B5782CB7901C95D33 /* Pods-DPValidatorDemo-umbrella.h */,
+				2F2C62F7EDB9BBE5D5A737E4A1EBCC0C /* Pods-DPValidatorDemo.debug.xcconfig */,
+				E125B7EBC9852A423C118C690DB72654 /* Pods-DPValidatorDemo.release.xcconfig */,
+			);
+			name = "Pods-DPValidatorDemo";
+			path = "Target Support Files/Pods-DPValidatorDemo";
+			sourceTree = "<group>";
+		};
+		76E978088B848FA2A0D70D6486B26C74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D55777B80EF8B3EBDD0F7CEBDA05893A /* DPValidator.bundle */,
+				206C4C4876DEDB9214CFB8FB4A7AFDDA /* Pods_DPValidatorDemo.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				ACDF38E5BE078311694969B40A9D7AF5 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				76E978088B848FA2A0D70D6486B26C74 /* Products */,
+				87288B78BE411FB482ED2633A6590A64 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		87288B78BE411FB482ED2633A6590A64 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				65593FDE4D68A9963C08B5A0B6E7035F /* Pods-DPValidatorDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		ACDF38E5BE078311694969B40A9D7AF5 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FA48F315968CF8F1FD8189A91EDC1627 /* DPValidator */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		AE7898AD6A4671763D87515A09BC3173 /* Output */ = {
+			isa = PBXGroup;
+			children = (
+				C0AA5BED6216A11A144223639C54E378 /* DPValidator.framework */,
+			);
+			path = Output;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C0AA5BED6216A11A144223639C54E378 /* DPValidator.framework */ = {
+			isa = PBXGroup;
+			children = (
+				421851BBF81AC3D8497C04DEBBE98C28 /* Headers */,
+			);
+			path = DPValidator.framework;
+			sourceTree = "<group>";
+		};
+		FA48F315968CF8F1FD8189A91EDC1627 /* DPValidator */ = {
+			isa = PBXGroup;
+			children = (
+				524B19865B4B5C9603277E11315B2B46 /* Frameworks */,
+				AE7898AD6A4671763D87515A09BC3173 /* Output */,
+			);
+			name = DPValidator;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D96C4C0E03D3FC71E986F11CE0CB6E9C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C9D55871C286FF3535B27B6D34A0E71 /* Pods-DPValidatorDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		21D0AFB50CF59C94C5A54A9B57771EBB /* Pods-DPValidatorDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9024A9E1700FE5F6BC0DFE6AB00EE11C /* Build configuration list for PBXNativeTarget "Pods-DPValidatorDemo" */;
+			buildPhases = (
+				2CF771045C8EB6CB21E29FEFDC2D4164 /* Sources */,
+				6BC008D788B914BA05F5CF31FFD8E599 /* Frameworks */,
+				D96C4C0E03D3FC71E986F11CE0CB6E9C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E4F0BE9C899EA866FDB46407BFCB816 /* PBXTargetDependency */,
+			);
+			name = "Pods-DPValidatorDemo";
+			productName = "Pods-DPValidatorDemo";
+			productReference = 206C4C4876DEDB9214CFB8FB4A7AFDDA /* Pods_DPValidatorDemo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		56C6C10F87E838B62E490A9C4C40E4DB /* DPValidator-DPValidator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C607E2BA8645A8DD7F2015E9274EAFC /* Build configuration list for PBXNativeTarget "DPValidator-DPValidator" */;
+			buildPhases = (
+				10BB67C880CC1D38C1A9255CE5D46CFA /* Sources */,
+				6EA2BD267F364139F94980C783B3C81D /* Frameworks */,
+				77F993ABBDC02AAFB93D2CF8285FD3BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DPValidator-DPValidator";
+			productName = "DPValidator-DPValidator";
+			productReference = D55777B80EF8B3EBDD0F7CEBDA05893A /* DPValidator.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 76E978088B848FA2A0D70D6486B26C74 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				56C6C10F87E838B62E490A9C4C40E4DB /* DPValidator-DPValidator */,
+				21D0AFB50CF59C94C5A54A9B57771EBB /* Pods-DPValidatorDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		77F993ABBDC02AAFB93D2CF8285FD3BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		10BB67C880CC1D38C1A9255CE5D46CFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CF771045C8EB6CB21E29FEFDC2D4164 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E37344D6697102A9CC0936008679D3A8 /* Pods-DPValidatorDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8E4F0BE9C899EA866FDB46407BFCB816 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "DPValidator-DPValidator";
+			target = 56C6C10F87E838B62E490A9C4C40E4DB /* DPValidator-DPValidator */;
+			targetProxy = C36E7D26D64E87A362166E54603A63B3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9931F57561B0B76EED88EF0D1F00059C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F2C62F7EDB9BBE5D5A737E4A1EBCC0C /* Pods-DPValidatorDemo.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DPValidatorDemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DPValidatorDemo/Pods-DPValidatorDemo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_DPValidatorDemo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		CDE329E88EC4212AA8BCE8E1DEBFB7E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E125B7EBC9852A423C118C690DB72654 /* Pods-DPValidatorDemo.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DPValidatorDemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DPValidatorDemo/Pods-DPValidatorDemo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_DPValidatorDemo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CE7AFBF758B877CC0CBF0B8A054B6651 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = DPValidator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		F599CE9178C2502D6BB2AA9B160CCBF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = DPValidator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */,
+				FB45FFD90572718D82AB9092B750F0CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C607E2BA8645A8DD7F2015E9274EAFC /* Build configuration list for PBXNativeTarget "DPValidator-DPValidator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F599CE9178C2502D6BB2AA9B160CCBF8 /* Debug */,
+				CE7AFBF758B877CC0CBF0B8A054B6651 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9024A9E1700FE5F6BC0DFE6AB00EE11C /* Build configuration list for PBXNativeTarget "Pods-DPValidatorDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9931F57561B0B76EED88EF0D1F00059C /* Debug */,
+				CDE329E88EC4212AA8BCE8E1DEBFB7E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

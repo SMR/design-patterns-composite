@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:DPValidatorDemo/DPValidatorDemo.xcodeproj">
+      location = "group:DPValidatorDemo.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:DPValidator/DPValidator.xcodeproj">
+      location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

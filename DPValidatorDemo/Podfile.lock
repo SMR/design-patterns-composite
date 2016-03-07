@@ -1,0 +1,14 @@
+PODS:
+  - DPValidator (1.0.0)
+
+DEPENDENCIES:
+  - DPValidator (from `../`)
+
+EXTERNAL SOURCES:
+  DPValidator:
+    :path: ../
+
+SPEC CHECKSUMS:
+  DPValidator: 3cc401564d416338bb7a223633a57a91be219f3a
+
+COCOAPODS: 0.39.0
